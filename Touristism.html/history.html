@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The history, indigenous peoples, festivals, crafts and food of Davao Region, with a short quiz.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Our History &amp; Culture | Davao Region</title>
+</head>
+<body>
+
+    <!-- navigation (same on every page) -->
+    <nav class="site-nav">
+        <a class="brand" href="indexhomepage.html">Discover Davao</a>
+        <ul>
+            <li><a href="indexhomepage.html">Homepage</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="history.html" aria-current="page">History</a></li>
+            <li><a href="plan-trip.html" class="nav-cta">Plan-Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- page title -->
+    <header class="hist-hero" id="top">
+        <div class="hist-hero-inner">
+            <h1>Our History &amp; Culture</h1>
+            <p>The people, the stories and the traditions of Davao Region.</p>
+        </div>
+    </header>
+
+    <!-- jump links (stay at the top while scrolling) -->
+    <div class="jump-bar">
+        <a href="#story">&#128220; History</a>
+        <a href="#peoples">&#127963; Peoples</a>
+        <a href="#highlights">&#127881; Culture</a>
+        <a href="#quiz">&#10067; Quiz</a>
+    </div>
+
+    <main class="history">
+
+        <!-- brief history -->
+        <section class="story" id="story">
+            <h2>A Brief History</h2>
+
+            <p>
+                Long before foreign ships arrived, the land around the Davao Gulf was
+                home to indigenous peoples such as the Bagobo, Mandaya, Mansaka and
+                Matigsalug. They farmed the river valleys, lived in the mountains and
+                traded with their neighbors. Different groups tell different stories
+                about where the name "Davao" comes from.
+            </p>
+
+            <p>
+                In the mid-1800s a Spanish expedition led by Jose Cruz de Uyanguren
+                came to the gulf and set up a settlement called Nueva Vergara. Local
+                leaders, including the Bagobo chieftain Datu Bago, resisted, and
+                Spanish control stayed limited. In the early 1900s, during the
+                American period, large abaca (Manila hemp) plantations began to grow.
+                Workers and settlers came from other parts of the Philippines and from
+                Japan, and Davao grew quickly. It became a chartered city in 1937.
+            </p>
+
+            <p>
+                After the Second World War, more families moved to Mindanao from the
+                Visayas and Luzon, which made the region the mix of cultures it is
+                today. Cebuano is widely spoken, and many people also speak Tagalog
+                and English. Indigenous traditions are still alive in the region's
+                festivals, weaving, music and food.
+            </p>
+        </section>
+
+        <!-- timeline: click an era to open it -->
+        <section class="timeline-section">
+            <h2>Timeline</h2>
+            <p class="hint">Click an era to read more.</p>
+
+            <details class="era" name="era" open>
+                <summary><span class="year">Before the 1800s</span> Indigenous peoples</summary>
+                <p>The Bagobo, Mandaya, Mansaka, Matigsalug and other groups farmed, hunted and traded around the gulf and in the mountains.</p>
+            </details>
+
+            <details class="era" name="era">
+                <summary><span class="year">Mid-1800s</span> The Spanish arrive</summary>
+                <p>An expedition led by Jose Cruz de Uyanguren set up Nueva Vergara. Local leaders such as Datu Bago resisted, so Spanish control stayed limited.</p>
+            </details>
+
+            <details class="era" name="era">
+                <summary><span class="year">Early 1900s</span> Abaca plantations</summary>
+                <p>During the American period, large abaca plantations began to grow. Workers and settlers came from other parts of the Philippines and from Japan.</p>
+            </details>
+
+            <details class="era" name="era">
+                <summary><span class="year">1937</span> Davao becomes a city</summary>
+                <p>Davao was chartered as a city after years of fast growth.</p>
+            </details>
+
+            <details class="era" name="era">
+                <summary><span class="year">After World War II</span> A mix of cultures</summary>
+                <p>More families moved to Mindanao from the Visayas and Luzon, shaping the many-cultured region we know today.</p>
+            </details>
+        </section>
+
+        <!-- indigenous peoples: hover or tab to read more -->
+        <section class="peoples" id="peoples">
+            <h2>Indigenous Peoples</h2>
+            <p class="hint">Hover over a card (or tap it) to learn more.</p>
+
+            <div class="people-grid">
+                <div class="person" tabindex="0">
+                    <span class="person-icon" aria-hidden="true">&#129525;</span>
+                    <h3>Bagobo</h3>
+                    <p class="more">Known for woven abaca cloth, beadwork and brass ornaments.</p>
+                </div>
+                <div class="person" tabindex="0">
+                    <span class="person-icon" aria-hidden="true">&#129525;</span>
+                    <h3>Mandaya</h3>
+                    <p class="more">Known for dagmay, woven abaca cloth with detailed patterns, made in Davao Oriental.</p>
+                </div>
+                <div class="person" tabindex="0">
+                    <span class="person-icon" aria-hidden="true">&#127956;</span>
+                    <h3>Mansaka</h3>
+                    <p class="more">An indigenous group of Davao de Oro, a province known for its gold.</p>
+                </div>
+                <div class="person" tabindex="0">
+                    <span class="person-icon" aria-hidden="true">&#127811;</span>
+                    <h3>Matigsalug</h3>
+                    <p class="more">An indigenous group that traditionally lives in river valleys and uplands.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- cultural highlights in tabs (no JavaScript, just radio buttons + CSS) -->
+        <section class="highlights" id="highlights">
+            <h2>Cultural Highlights</h2>
+
+            <div class="tabs">
+                <input type="radio" name="tab" id="tab-fest" checked>
+                <input type="radio" name="tab" id="tab-craft">
+                <input type="radio" name="tab" id="tab-food">
+
+                <div class="tab-labels">
+                    <label for="tab-fest">&#127881; Festivals</label>
+                    <label for="tab-craft">&#129525; Traditional Crafts</label>
+                    <label for="tab-food">&#127860; Local Foods</label>
+                </div>
+
+                <!-- festivals -->
+                <div class="panel panel-fest">
+                    <div class="item">
+                        <span class="chip">August</span>
+                        <h3>Kadayawan Festival</h3>
+                        <p>Davao City. A thanksgiving for the harvest and for the many cultures of the region, with a flower parade and street dancing.</p>
+                    </div>
+                    <div class="item">
+                        <span class="chip">March</span>
+                        <h3>Araw ng Dabaw</h3>
+                        <p>Davao City. The city's founding anniversary, with parades, programs and community events.</p>
+                    </div>
+                    <div class="item">
+                        <span class="chip">Davao Oriental</span>
+                        <h3>Pasidungog Festival</h3>
+                        <p>A celebration that honors the province's people and culture.</p>
+                    </div>
+                    <div class="item">
+                        <span class="chip">Davao de Oro</span>
+                        <h3>Bulawan Festival</h3>
+                        <p>A festival named after the local word for gold, which the province is known for.</p>
+                    </div>
+                </div>
+
+                <!-- crafts -->
+                <div class="panel panel-craft">
+                    <div class="item">
+                        <span class="chip">Mandaya</span>
+                        <h3>Dagmay</h3>
+                        <p>Woven abaca cloth made by the Mandaya of Davao Oriental, known for its patterns.</p>
+                    </div>
+                    <div class="item">
+                        <span class="chip">Bagobo</span>
+                        <h3>Bagobo weaving</h3>
+                        <p>Abaca cloth woven by Bagobo weavers using traditional methods.</p>
+                    </div>
+                    <div class="item">
+                        <span class="chip">Many groups</span>
+                        <h3>Beadwork and brass ornaments</h3>
+                        <p>Colorful beaded jewelry and brass accessories made by indigenous groups.</p>
+                    </div>
+                </div>
+
+                <!-- foods -->
+                <div class="panel panel-food">
+                    <div class="item">
+                        <span class="chip">Fruit</span>
+                        <h3>Durian</h3>
+                        <p>The "king of fruits" and a symbol of Davao.</p>
+                    </div>
+                    <div class="item">
+                        <span class="chip">Fruit</span>
+                        <h3>Pomelo</h3>
+                        <p>A large, juicy citrus fruit grown in the region.</p>
+                    </div>
+                    <div class="item">
+                        <span class="chip">Seafood</span>
+                        <h3>Grilled tuna</h3>
+                        <p>Often served as panga (jaw) or belly.</p>
+                    </div>
+                    <div class="item">
+                        <span class="chip">Sweet</span>
+                        <h3>Cacao chocolate</h3>
+                        <p>Made from cacao grown in the region.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mini quiz (also CSS only: the class "right" or "wrong" decides which message shows) -->
+        <section class="quiz" id="quiz">
+            <h2>Test yourself</h2>
+            <p class="hint">Pick an answer. You will see right away if you got it.</p>
+
+            <div class="question">
+                <p class="q-text">1. In which month is the Kadayawan Festival held?</p>
+                <input type="radio" name="q1" id="q1a" class="wrong"><label for="q1a">March</label>
+                <input type="radio" name="q1" id="q1b" class="right"><label for="q1b">August</label>
+                <input type="radio" name="q1" id="q1c" class="wrong"><label for="q1c">December</label>
+                <p class="result good">Correct! It is a thanksgiving festival in August.</p>
+                <p class="result bad">Not quite. Check the Festivals tab and try again.</p>
+            </div>
+
+            <div class="question">
+                <p class="q-text">2. What is dagmay?</p>
+                <input type="radio" name="q2" id="q2a" class="wrong"><label for="q2a">A type of fruit</label>
+                <input type="radio" name="q2" id="q2b" class="right"><label for="q2b">Woven abaca cloth</label>
+                <input type="radio" name="q2" id="q2c" class="wrong"><label for="q2c">A festival dance</label>
+                <p class="result good">Correct! Dagmay is woven by the Mandaya of Davao Oriental.</p>
+                <p class="result bad">Not quite. Look at the Traditional Crafts tab.</p>
+            </div>
+
+            <div class="question">
+                <p class="q-text">3. In what year did Davao become a chartered city?</p>
+                <input type="radio" name="q3" id="q3a" class="wrong"><label for="q3a">1848</label>
+                <input type="radio" name="q3" id="q3b" class="right"><label for="q3b">1937</label>
+                <input type="radio" name="q3" id="q3c" class="wrong"><label for="q3c">1946</label>
+                <p class="result good">Correct! It became a city in 1937.</p>
+                <p class="result bad">Not quite. Open the timeline above and check.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- call to action -->
+    <section class="cta">
+        <h2>Want to see it for yourself?</h2>
+        <p>Plan a trip and meet the culture in person.</p>
+        <a class="btn btn-primary" href="plan-trip.html">Plan your trip</a>
+    </section>
+
+    <!-- floating back to top button -->
+    <a class="to-top" href="#top" aria-label="Back to top">&uarr;</a>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <p class="footer-brand">Davao Region Travel Guide</p>
+                <p>Davao City, Philippines</p>
+                <p class="credit">Made by Yenn Mars A Padayhag for Intro Comp</p>
+            </div>
+            <div>
+                <p>Email: <a href="mailto:davaotourist@gmail.com">davaotourist@gmail.com</a></p>
+                <p>Phone: +63 0923 123 4514</p>
+            </div>
+            <ul>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="plan-trip.html">Plan-Trip</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

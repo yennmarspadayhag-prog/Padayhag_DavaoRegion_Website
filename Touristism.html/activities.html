@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="16 things to do in Davao Region: hiking, surfing, festivals, local food and quiet beaches, plus a sample 3-day trip.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Activities &amp; Experiences | Davao Region</title>
+</head>
+<body>
+
+    <!-- nav bar: copy-pasted on every page so the links match -->
+    <nav class="site-nav">
+        <a class="brand" href="indexhomepage.html">Discover Davao</a>
+        <ul>
+            <li><a href="indexhomepage.html">Homepage</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="activities.html" aria-current="page">Activities</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="plan-trip.html" class="nav-cta">Plan-Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- big banner at the top (the photo is added in style.css) -->
+    <header class="act-hero" id="top">
+        <div class="act-hero-inner">
+            <h1>Activities &amp; Experiences</h1>
+            <p>Things to do in Davao Region, from mountain trails to local food.</p>
+            <div class="stats">
+                <span>4 categories</span>
+                <span>16 activities</span>
+                <span>1 sample trip</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- jump links: position sticky in the CSS keeps this bar on screen -->
+    <div class="jump-bar">
+        <a href="#adventure">&#129495; Adventure</a>
+        <a href="#culture">&#127917; Culture</a>
+        <a href="#food">&#127860; Food</a>
+        <a href="#nature">&#127795; Nature &amp; Relaxation</a>
+        <a href="#plan">&#128197; Sample plan</a>
+    </div>
+
+    <!-- 4 cards, each one links down to its section -->
+    <section class="travelers">
+        <h2>Which traveler are you?</h2>
+        <div class="traveler-grid">
+            <a class="traveler" href="#adventure">
+                <span class="traveler-icon" aria-hidden="true">&#129495;</span>
+                <strong>The adventurer</strong>
+                <span>I want mountains and waves.</span>
+            </a>
+            <a class="traveler" href="#culture">
+                <span class="traveler-icon" aria-hidden="true">&#127917;</span>
+                <strong>The culture lover</strong>
+                <span>I want festivals and stories.</span>
+            </a>
+            <a class="traveler" href="#food">
+                <span class="traveler-icon" aria-hidden="true">&#127860;</span>
+                <strong>The foodie</strong>
+                <span>I want to taste everything.</span>
+            </a>
+            <a class="traveler" href="#nature">
+                <span class="traveler-icon" aria-hidden="true">&#127795;</span>
+                <strong>The relaxer</strong>
+                <span>I want cool air and quiet beaches.</span>
+            </a>
+        </div>
+    </section>
+
+    <main class="activities">
+
+        <!-- ADVENTURE section (the other 3 sections use the same layout) -->
+        <section class="category adventure" id="adventure">
+            <div class="banner">
+                <span class="big-icon" aria-hidden="true">&#129495;</span>
+                <div>
+                    <h2>Adventure</h2>
+                    <p>For people who like climbing, swimming and surfing.</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <span class="icon" aria-hidden="true">&#9968;</span>
+                    <span class="text">Hike up Mount Apo, the highest mountain in the Philippines.</span>
+                    <span class="tags"><span class="level hard">Challenging</span><span class="badge">Needs a guide</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#129517;</span>
+                    <span class="text">Trek the mossy forest of Mount Hamiguitan.</span>
+                    <span class="tags"><span class="level hard">Challenging</span><span class="badge">Needs a guide</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#127940;</span>
+                    <span class="text">Try surfing or skimboarding at Dahican Beach in Mati.</span>
+                    <span class="tags"><span class="level mid">Moderate</span><span class="badge">Beginner friendly</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#128674;</span>
+                    <span class="text">Go island hopping and snorkeling around Samal Island.</span>
+                    <span class="tags"><span class="level easy">Easy</span><span class="badge">Family friendly</span></span>
+                </li>
+            </ul>
+            <details>
+                <summary>Good to know</summary>
+                <p>Mountain climbs need advance arrangements, so book early and check the current permit rules.</p>
+            </details>
+        </section>
+
+        <!-- CULTURE section -->
+        <section class="category culture" id="culture">
+            <div class="banner">
+                <span class="big-icon" aria-hidden="true">&#127917;</span>
+                <div>
+                    <h2>Culture</h2>
+                    <p>Festivals, traditions and the people of the region.</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <span class="icon" aria-hidden="true">&#127881;</span>
+                    <span class="text">Join the Kadayawan Festival in August, a celebration of harvest and culture.</span>
+                    <span class="tags"><span class="badge">Yearly event</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#127963;</span>
+                    <span class="text">Learn about the Bagobo, Mandaya and other indigenous peoples of the region.</span>
+                    <span class="tags"><span class="badge">Learn something</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#128444;</span>
+                    <span class="text">Visit a local museum in Davao City to see the history of the region.</span>
+                    <span class="tags"><span class="badge">Indoors</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#129413;</span>
+                    <span class="text">Meet the Philippine Eagle at the Philippine Eagle Center in Calinan.</span>
+                    <span class="tags"><span class="badge">Family friendly</span></span>
+                </li>
+            </ul>
+            <details>
+                <summary>Good to know</summary>
+                <p>Festival dates change from year to year, so check the schedule before you book your trip.</p>
+            </details>
+        </section>
+
+        <!-- FOOD section -->
+        <section class="category food" id="food">
+            <div class="banner">
+                <span class="big-icon" aria-hidden="true">&#127860;</span>
+                <div>
+                    <h2>Food</h2>
+                    <p>Fresh fruit, seafood and local chocolate.</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <span class="icon" aria-hidden="true">&#127815;</span>
+                    <span class="text">Taste durian, pomelo and other local fruits in season.</span>
+                    <span class="tags"><span class="badge">Seasonal</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#128031;</span>
+                    <span class="text">Order grilled tuna, a Davao favorite at many local restaurants.</span>
+                    <span class="tags"><span class="badge">Must try</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#127851;</span>
+                    <span class="text">Try chocolate made from locally grown cacao.</span>
+                    <span class="tags"><span class="badge">Good gift</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#129380;</span>
+                    <span class="text">Buy fresh fruit and snacks to take home from a local market.</span>
+                    <span class="tags"><span class="badge">Budget friendly</span></span>
+                </li>
+            </ul>
+            <details>
+                <summary>Good to know</summary>
+                <p>Durian has a very strong smell, so some hotels and buses do not allow it. Ask first.</p>
+            </details>
+        </section>
+
+        <!-- NATURE section -->
+        <section class="category nature" id="nature">
+            <div class="banner">
+                <span class="big-icon" aria-hidden="true">&#127795;</span>
+                <div>
+                    <h2>Nature &amp; Relaxation</h2>
+                    <p>Slow days, cool air and quiet beaches.</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <span class="icon" aria-hidden="true">&#129530;</span>
+                    <span class="text">Have a picnic and walk the gardens at Eden Nature Park.</span>
+                    <span class="tags"><span class="badge">Family friendly</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#127958;</span>
+                    <span class="text">Spend a lazy afternoon on the white sand beaches of Samal.</span>
+                    <span class="tags"><span class="badge">Easy day</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#128034;</span>
+                    <span class="text">Watch for sea turtle hatchling releases at Dahican Beach.</span>
+                    <span class="tags"><span class="badge">Seasonal</span></span>
+                </li>
+                <li>
+                    <span class="icon" aria-hidden="true">&#127749;</span>
+                    <span class="text">Watch the sunrise over the Pacific on the Davao Oriental coast.</span>
+                    <span class="tags"><span class="badge">Early start</span></span>
+                </li>
+            </ul>
+            <details>
+                <summary>Good to know</summary>
+                <p>The highlands are cooler than the coast, so bring a light jacket for Eden Nature Park.</p>
+            </details>
+        </section>
+
+    </main>
+
+    <!-- sample trip: I used an ordered list (ol) because the days go in order -->
+    <section class="plan" id="plan">
+        <h2>A sample 3-day trip</h2>
+        <p class="plan-intro">This is how I would mix the activities above. Change it to fit your own time.</p>
+
+        <ol class="timeline">
+            <li>
+                <span class="day">Day 1</span>
+                <h3>Davao City highlands</h3>
+                <p>Visit the Philippine Eagle Center in the morning, then have a picnic and a walk at Eden Nature Park. End the day with grilled tuna for dinner.</p>
+            </li>
+            <li>
+                <span class="day">Day 2</span>
+                <h3>Samal Island</h3>
+                <p>Take the ferry for a day of island hopping, snorkeling and a lazy afternoon on the beach.</p>
+            </li>
+            <li>
+                <span class="day">Day 3</span>
+                <h3>Davao Oriental coast</h3>
+                <p>Head to Mati for a morning surf or skimboard lesson at Dahican Beach. Ask locally if a turtle release is happening that day.</p>
+            </li>
+        </ol>
+        <a class="btn btn-primary" href="plan-trip.html">Build your own trip</a>
+    </section>
+
+    <a class="back-top" href="#top">Back to top</a>
+
+    <!-- footer: same on every page -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <p class="footer-brand">Davao Region Travel Guide</p>
+                <p>Davao City, Philippines</p>
+                <p class="credit">Made by [Your Name] for [Course Name]</p>
+                <p class="credit">For school use. Please check official sources before you travel.</p>
+            </div>
+            <div>
+                <p>Email: <a href="mailto:davaotourist@gmail.com">davaotourist@gmail.com</a></p>
+                <p>Phone: +63 0923 123 4514</p>
+            </div>
+            <ul>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="plan-trip.html">Plan-Trip</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

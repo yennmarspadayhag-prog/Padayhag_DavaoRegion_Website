@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plan your Davao Region trip: when to go, how to get around, sample 3-day itineraries, a packing checklist and an inquiry form.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Plan Your Trip | Davao Region</title>
+</head>
+<body>
+
+    <!-- navigation (same on every page) -->
+    <nav class="site-nav">
+        <a class="brand" href="indexhomepage.html">Discover Davao</a>
+        <ul>
+            <li><a href="indexhomepage.html">Homepage</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="plan-trip.html" class="nav-cta" aria-current="page">Plan-Trip</a></li>
+        </ul>
+    </nav>
+
+    <!-- page title -->
+    <header class="trip-hero" id="top">
+        <div class="trip-hero-inner">
+            <h1>Plan Your Trip</h1>
+            <p>Everything you need to get from "I want to go" to "I'm packed."</p>
+        </div>
+    </header>
+
+    <!-- jump links -->
+    <div class="jump-bar">
+        <a href="#basics">&#129517; Basics</a>
+        <a href="#itineraries">&#128197; Itineraries</a>
+        <a href="#packing">&#127890; Packing</a>
+        <a href="#faq">&#128161; Tips</a>
+        <a href="#inquiry">&#9993; Ask us</a>
+    </div>
+
+    <main class="history trip">
+
+        <!-- travel basics -->
+        <section id="basics">
+            <h2>Travel Basics</h2>
+            <div class="basics-grid">
+                <div class="basic">
+                    <span aria-hidden="true">&#128197;</span>
+                    <h3>When to go</h3>
+                    <p>August is the busiest and most colorful month because of the Kadayawan Festival. Book early if you want to be there.</p>
+                </div>
+                <div class="basic">
+                    <span aria-hidden="true">&#9992;</span>
+                    <h3>Getting there</h3>
+                    <p>Most visitors fly into Davao International Airport. From Davao City you can travel on to the other provinces by road.</p>
+                </div>
+                <div class="basic">
+                    <span aria-hidden="true">&#128661;</span>
+                    <h3>Getting around</h3>
+                    <p>Use taxis, ride-hailing apps or jeepneys in the city. Samal Island is a short ferry ride from Davao City.</p>
+                </div>
+                <div class="basic">
+                    <span aria-hidden="true">&#127976;</span>
+                    <h3>Where to stay</h3>
+                    <p>Davao City is the easiest base. For beach days, stay on Samal or in Mati.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- itineraries in tabs (radio buttons + CSS, same trick as the history page) -->
+        <section id="itineraries">
+            <h2>Pick a Trip Style</h2>
+            <p class="hint">Choose a style to see a 3-day idea. Change it to fit your own time.</p>
+
+            <div class="tabs">
+                <input type="radio" name="style" id="tab-adv" checked>
+                <input type="radio" name="style" id="tab-cul">
+                <input type="radio" name="style" id="tab-eat">
+                <input type="radio" name="style" id="tab-rel">
+
+                <div class="tab-labels">
+                    <label for="tab-adv">&#129495; Adventure</label>
+                    <label for="tab-cul">&#127917; Culture</label>
+                    <label for="tab-eat">&#127860; Food</label>
+                    <label for="tab-rel">&#127795; Relax</label>
+                </div>
+
+                <div class="panel panel-adv">
+                    <div class="item"><span class="chip">Day 1</span><h3>Samal Island</h3><p>Island hopping and snorkeling.</p></div>
+                    <div class="item"><span class="chip">Day 2</span><h3>Dahican Beach, Mati</h3><p>Try surfing or skimboarding.</p></div>
+                    <div class="item"><span class="chip">Day 3</span><h3>Mountain trek</h3><p>Mount Apo or Mount Hamiguitan with a registered guide, arranged in advance.</p></div>
+                </div>
+
+                <div class="panel panel-cul">
+                    <div class="item"><span class="chip">Day 1</span><h3>Davao City</h3><p>Visit a local museum and learn about the region's history.</p></div>
+                    <div class="item"><span class="chip">Day 2</span><h3>Calinan</h3><p>Meet the Philippine Eagle at the Philippine Eagle Center.</p></div>
+                    <div class="item"><span class="chip">Day 3</span><h3>Crafts and festivals</h3><p>Look for dagmay and Bagobo weaving, and check the festival schedule.</p></div>
+                </div>
+
+                <div class="panel panel-eat">
+                    <div class="item"><span class="chip">Day 1</span><h3>Local market</h3><p>Taste durian, pomelo and other fruit in season.</p></div>
+                    <div class="item"><span class="chip">Day 2</span><h3>Grilled tuna</h3><p>Order panga or belly for lunch.</p></div>
+                    <div class="item"><span class="chip">Day 3</span><h3>Cacao chocolate</h3><p>Try chocolate made from locally grown cacao and buy some as gifts.</p></div>
+                </div>
+
+                <div class="panel panel-rel">
+                    <div class="item"><span class="chip">Day 1</span><h3>Eden Nature Park</h3><p>Picnic and a garden walk in the cool highlands.</p></div>
+                    <div class="item"><span class="chip">Day 2</span><h3>Samal beaches</h3><p>A lazy afternoon on the white sand.</p></div>
+                    <div class="item"><span class="chip">Day 3</span><h3>Davao Oriental coast</h3><p>Watch the sunrise over the Pacific.</p></div>
+                </div>
+            </div>
+            <p class="more-link">Want more ideas? See the <a href="activities.html">Activities page</a> or the <a href="destinations.html">Destinations page</a>.</p>
+        </section>
+
+        <!-- packing checklist (checking a box crosses out the item, CSS only) -->
+        <section id="packing">
+            <h2>Packing Checklist</h2>
+            <p class="hint">Tap an item to check it off.</p>
+            <ul class="checklist">
+                <li><input type="checkbox" id="p1"><label for="p1">Valid ID and booking details</label></li>
+                <li><input type="checkbox" id="p2"><label for="p2">Sunscreen, hat and sunglasses</label></li>
+                <li><input type="checkbox" id="p3"><label for="p3">Swimwear and a quick-dry towel</label></li>
+                <li><input type="checkbox" id="p4"><label for="p4">Light jacket for the highlands</label></li>
+                <li><input type="checkbox" id="p5"><label for="p5">Rain jacket or small umbrella</label></li>
+                <li><input type="checkbox" id="p6"><label for="p6">Comfortable shoes for hiking</label></li>
+                <li><input type="checkbox" id="p7"><label for="p7">Reusable water bottle</label></li>
+                <li><input type="checkbox" id="p8"><label for="p8">Power bank and phone charger</label></li>
+                <li><input type="checkbox" id="p9"><label for="p9">Some cash for markets and small towns</label></li>
+            </ul>
+        </section>
+
+        <!-- tips -->
+        <section id="faq">
+            <h2>Good to Know</h2>
+            <details class="era" name="tip" open>
+                <summary>Do I need a guide for mountain climbs?</summary>
+                <p>Climbs of Mount Apo and Mount Hamiguitan are arranged through registered guides and local offices. Book early and check the current permit rules.</p>
+            </details>
+            <details class="era" name="tip">
+                <summary>Can I bring durian to my hotel?</summary>
+                <p>Many hotels and buses do not allow durian because of its strong smell. Ask first.</p>
+            </details>
+            <details class="era" name="tip">
+                <summary>When can I see sea turtle hatchlings at Dahican?</summary>
+                <p>Releases depend on the season, so ask locally before you go.</p>
+            </details>
+            <details class="era" name="tip">
+                <summary>Do festival dates stay the same every year?</summary>
+                <p>No. Check the schedule before you book your trip.</p>
+            </details>
+        </section>
+
+        <!-- inquiry form (opens the visitor's email app) -->
+        <section id="inquiry">
+            <h2>Ask Us About Your Trip</h2>
+            <p class="hint">Fill this in and your email app will open with the message ready to send.</p>
+
+            <form class="inquiry-form" action="mailto:davaotourist@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="Name" required>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="Email" required>
+
+                <label for="dates">Travel dates</label>
+                <input type="text" id="dates" name="Dates" placeholder="Example: August 10 to 14">
+
+                <label for="people">Number of travelers</label>
+                <input type="number" id="people" name="Travelers" min="1" value="1">
+
+                <label for="interest">Trip style</label>
+                <select id="interest" name="Trip style">
+                    <option>Adventure</option>
+                    <option>Culture</option>
+                    <option>Food</option>
+                    <option>Relax</option>
+                    <option>A mix of everything</option>
+                </select>
+
+                <label for="msg">Your questions</label>
+                <textarea id="msg" name="Message" rows="4"></textarea>
+
+                <button type="submit" class="btn btn-primary">Send inquiry</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- floating back to top button -->
+    <a class="to-top" href="#top" aria-label="Back to top">&uarr;</a>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <p class="footer-brand">Davao Region Travel Guide</p>
+                <p>Davao City, Philippines</p>
+                <p class="credit">Made by [Your Name] for [Course Name]</p>
+            </div>
+            <div>
+                <p>Email: <a href="mailto:davaotourist@gmail.com">davaotourist@gmail.com</a></p>
+                <p>Phone: +63 0923 123 4514</p>
+            </div>
+            <ul>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="plan-trip.html">Plan-Trip</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
